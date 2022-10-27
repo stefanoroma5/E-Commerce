@@ -1,0 +1,490 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/*queste 3 istruzioni servono per avere il
+  footer sempre sotto e non a meta pagina*/
+html, body {
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -70px;
+}
+
+footer, .push {
+    height: 30px;
+    clear: both;
+}
+/****************************************/
+a:link, a:active, a:visited { 
+    text-decoration: none;
+    color: #000066;
+    font-family: "Calibri",Arial,Helvetica,sans-serif;
+    font-size: 1em;
+
+} 
+
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden;
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+body {
+    background: white;
+    color: #000066;
+    font-family: "Calibri",Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+
+section h1 {
+    font-size: 1.6em;
+}
+
+.field {
+    margin: 5px 0;
+}
+label {
+    float: left;
+    width: 90px;
+    margin-right: 5px;
+    padding-top: 7px;
+}
+
+input {
+    border-radius: 4px;
+    border: solid 1px #e7e7e7;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 5px 0;
+}
+
+select {
+    border-radius: 6px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #f8f8f8;
+    border: solid 1px #e7e7e7;
+}
+
+/* Header Section */
+header {
+    background: white;
+    padding-top: 0px;
+}
+
+.header {
+    padding: 0px;
+}
+
+.logo {
+    float: left;
+    padding-top: 5px;
+    padding-left: 90px;
+}
+
+/* Navigation Menu */
+header nav {
+    float: left;
+    padding-top: 0px;
+    width: 100%;
+}
+
+header nav ul {
+    padding: 0;
+}
+
+.menu{
+    border-top: solid 1px #e7e7e7;
+    border-bottom: solid 1px #e7e7e7;
+    background: #f8f8f8;
+    padding-left: 90px;
+}
+
+header nav ul > li {
+    float:left; 
+    width:auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid 1px transparent;
+}
+
+nav ul > li > a {
+    display:block;
+    color:#0000B0;
+    text-align:center;
+    font-size:15px;
+    font-weight: 900;
+    text-transform:uppercase;
+    padding:5px 0 5px;
+    text-decoration:none;    
+}
+
+header nav ul > li:hover {
+    background: #2e2ea0;
+    border: solid 1px #000066;
+}
+header nav ul > li:hover > a {
+    color:#c3c3c3;    
+}
+
+.active {
+    background: #2e2ea0;
+}
+
+.active > a {
+    color: white; 
+}
+
+/*menu della sezione profili*/
+.menu-profilo {
+    width: fit-content;
+    float: left;
+}
+
+.menu-profilo .focus {
+    background-color: #2e2ea0;
+}
+
+main nav ul > li {
+    float: none;
+    padding: 5px 10px;
+    border-bottom: solid 1px #e7e7e7;
+    border-radius: 4px
+}
+
+main .menu {
+    padding-left: 0;
+    width: fit-content;
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: #e7e7e7
+}
+main nav ul > li > a {
+    text-align: left;
+}
+
+.info-profilo {
+    float: right;
+    width: 85%;
+}
+
+/* Login Section */
+#loginbox {
+    float: right;
+    padding-top: 17px;
+    padding-right: 150px;
+    list-style: none;
+}
+
+.logintext {
+    float: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
+
+.logintext:hover {
+    text-decoration: underline;
+}
+
+.loggedtext {
+    padding-right: 20px;
+}
+
+/* Carrello */
+
+.carrello {
+    float: right;
+    padding-right: 100px;
+    padding-top: 12px;
+}
+
+
+/* Main Section */
+
+main {
+    background-color: white;
+    padding-top: 20px;
+    margin: 0px 90px;
+}
+
+div, article, footer, section, h1 {
+    border-radius: 4px;
+}
+
+.container {
+    margin: 10px 20px;
+}
+
+article{
+    border: solid 1px #e7e7e7;
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+article:hover {
+    border: solid 1px #e4e4e4;
+    box-shadow: 0 0 10px #e4e4e4;
+}
+
+#pageTitle h1 {
+    font-size: 1.3em; 
+    font-weight: normal;
+}
+
+.imgholder {
+    height: 260px;
+    width: 260px;
+    position: relative;
+} 
+
+.cataloghi {
+    margin: 0px;
+}
+
+.catalogo {
+    position: relative;
+    width: 354px;
+    height: 200px;
+}
+
+.prodContainer {
+    margin: -1px;
+}
+
+.centraImmagine {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1px;
+}
+
+.infoprod {
+    margin-bottom: 10px;
+}
+
+.infoprod h1 {
+    color: red;
+    margin-top: 5px;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: #2525d8;
+    color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+    text-transform: uppercase;
+}
+
+.normal-button {
+    position: static;
+    width: auto;
+    transform: none;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+article:hover .button {
+    background-color: #ff2121;
+}
+
+.descrizione {
+    visibility: hidden;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    height: 91%;
+}
+
+.descrizione > p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+article:hover .descrizione {
+    visibility: visible;
+}
+
+.quantita {
+    text-align: center;
+    width: 40px;
+    height: 30px;
+}
+
+#rimuovi {
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+input[type="radio"] {
+    width:auto;
+    margin: 10px;
+}
+
+input[type="text"], textarea {
+    border-radius: 6px;
+    border: solid 1px #e7e7e7;
+    padding: 5px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+textarea {
+    text-align: left;
+}
+/*carrello, conferma-ordine*/
+table {
+    text-align: center;
+    border-spacing: 20px 5px;
+}    
+
+
+th, td {
+    padding: 5px 39px 15px;
+    font-size: 1.2em;
+}
+.tab-riepilogo {
+    float: right;
+    margin: 15px 0;
+    border: solid 1px #e7e7e7;
+}
+
+.tab-riepilogo h2 {
+    text-align: center;
+    border-bottom: solid 1px #e7e7e7;
+    background-color: #f8f8f8;
+}
+
+.tab-riepilogo table {
+    text-align: left;
+    border-spacing: 0;
+}
+
+.totale {
+    font-size: 1.4em;
+}
+
+/*barra di avanzamento in fase di acquisto*/
+.avanzamento {
+    border: solid 1px #e7e7e7;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    margin: 10px;
+}
+.avanzamento ul > li {
+    float:left; 
+    width: 33.33%;
+    padding: 5px 0;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+}
+.focus {
+    background-color: #00bb17;
+    color: white;
+}
+
+.focus a {
+    color: white;
+}
+
+/*style degli ordini*/
+
+.ordine {
+    margin: 10px 0;
+    border-top: solid 1px #e7e7e7;
+    border-radius: 0;
+}
+
+.ordine .container {
+    margin: 20px 0;
+}
+
+.ordine .prodContainer {
+    border: solid 1px #e7e7e7;
+    margin: 10px 0;
+    padding: 5px;
+    width: fit-content;
+}
+
+.ordine .imgholder {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.ordine .container > table {
+    text-align: left;
+    border-spacing: 0;
+}
+
+.ordine .container th, .container td {
+    padding: 5px 40px 5px 0;
+}
+
+.ordine .riepilogo {
+    position: relative;
+}
+
+.ordine .tab-riepilogo {
+    float: left;
+}
+
+.ordine .stato-ordine {
+    float: left;
+    margin: 15px 40px;
+    padding-left: 10px;
+    border-left: solid 1px #e7e7e7;
+    border-radius: 0;
+}
+
+/* Footer Section */
+footer {
+    padding:20px 40px;
+    text-align:right;
+    font-size:11px;
+    background-color:#d4d4d4;
+}
+
+footer a{
+    text-decoration:none;
+    color:#5E5956;
+}
+
+footer #privacy {
+    float:right;
+}
+
+
+
